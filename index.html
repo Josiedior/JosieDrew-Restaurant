@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="js/blog.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="js/blog.js">
+
+        <title>JosieDrew Restaurant</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="boostrap/bootstrap.css">
+        <link rel="stylesheet" href="boostrap/bootstrap.min.css">
+        <link rel="stylesheet" href="js/blog.js">
+        <script src="https://kit.fontawesome.com/f4b47bd034.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <div id="header">
+            <div class="containter">
+                <nav>
+                    <img src="logo.png" class="logo" alt="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#Food Gallery">Menu</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <i class="fas fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+                </nav>
+            </div>
+            <!-- #home start -->
+            <section class="home" id="home">
+                <div class="home-text">
+                    <h1>JosieDrew Restaurant</h1>
+                    <h2>Where Culinary Excellence Meets Unforgettable Experiences</h2>
+                    <a href="#Food Gallery" class="btn">Today's Menu</a>
+                </div>
+            </section>
+        </div>
+        
+        <!--about-->
+        <div id="about">
+            <section>
+                <div class="about-img"></div>
+            </section>
+            <div class="container">
+                
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Us</h1>
+                    <div class="row">
+                        <div class="about-col-1">
+                            <img src="about.jpg" alt="">
+                        </div>
+                    </div>
+                    <h2>We speak the good food language</h2>
+                    <p>Josie Drew Restaurant is a new restaurant in Nigeria that aims to provide customers with an exceptional 
+                        dining experience by blending American, Chinese, and Nigerian cuisines. The restaurant’s mission is to 
+                        offer high-quality food at reasonable prices while ensuring customer satisfaction and loyalty. 
+                        Josie Drew Restaurant will also embrace online orders and delivery services similar to platforms like 
+                        UberEats, DoorDash, and GrubHub. The establishment seeks to create job opportunities for the local community, 
+                        including students who need funds for their education. With a focus on cultural diversity and unique menu offerings, 
+                        Josie Drew Restaurant aspires to become a leader in the hospitality industry.
+                    </p>
+
+                    <div class="tab-titles" >
+                        <p class="tab-links active-link" onclick="opentab('Food-Gallery')">Food Gallery</p>
+                        <p class="tab-links" onclick="opentab('Gallery')" id="gallery">Hall & Events</p>
+                        <p class="tab-links" onclick="opentab('Menu')">Our Menu</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Food Gallery">
+                        <ul>
+                            <li><span>Order</span><br>Crave your indulgence</li>
+                        </ul>
+                        <div class="menu-container">
+                            <div class="box">
+                                <div class="box-img">
+                                    <img src="special 2.jpg" alt="">
+                                </div>
+                                <h2>Beef Burger</h2>
+                                <h3>Tasty Food</h3>
+                                <span>$15</span>
+                                <i class="bx bx-cart-alt"></i>
+                            </div>
+                            <div class="box">
+                                <div class="box-img">
+                                    <img src="burger.jpg" alt="">
+                                </div>
+                                <h2>Special Offer</h2>
+                                <h3>Tasty Food</h3>
+                                <span>$16</span>
+                                <i class="bx bx-cart-alt"></i>
+                            </div>
+                            <div class="box">
+                                <div class="box-img">
+                                    <img src="special 1.jpg" alt="">
+                                </div>
+                                <h2>Combo Package</h2>
+                                <h3>Tasty Food</h3>
+                                <span>$15</span>
+                                <i class="bx bx-cart-alt"></i>
+                            </div>
+                            <div class="box">
+                                <div class="box-img">
+                                    <img src="milkshake.jpg" alt="">
+                                </div>
+                                <h2>Milkshake</h2>
+                                <h3>Tasty Drink</h3>
+                                <span>$15</span>
+                                <i class="bx bx-cart-alt"></i>
+                            </div>
+                            <div class="box">
+                                <div class="box-img">
+                                    <img src="smoothies.jpg" alt="">
+                                </div>
+                                <h2>Smoothies</h2>
+                                <h3>Tasty Drink</h3>
+                                <span>$15</span>
+                                <i class="bx bx-cart-alt"></i>
+                            </div>
+                            <div class="box">
+                                <div class="box-img">
+                                    <img src="wings and chips.jpg" alt="">
+                                </div>
+                                <h2>Chicken & Chips</h2>
+                                <h3>Tasty Food</h3>
+                                <span>$16</span>
+                                <i class="bx bx-cart-alt"></i>
+                            </div>
+                            <div class="box">
+                                <div class="box-img">
+                                    <img src="juice2.jpg" alt="">
+                                </div>
+                                <h2>Juice</h2>
+                                <h3>Tasty Drink</h3>
+                                <span>$15</span>
+                                <i class="bx bx-cart-alt"></i>
+                            </div>
+                            <div class="box">
+                                <div class="box-img">
+                                    <img src="cocktail.jpg" alt="">
+                                </div>
+                                <h2>Cocktails</h2>
+                                <h3>Tasty Drink</h3>
+                                <span>$15</span>
+                                <i class="bx bx-cart-alt"></i>
+                            </div>
+                            <div class="box">
+                                <div class="box-img">
+                                    <img src="mocktail.jpg" alt="">
+                                </div>
+                                <h2>Mocktails</h2>
+                                <h3>Tasty Drink</h3>
+                                <span>$16</span>
+                                <i class="bx bx-cart-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-contents" id="Gallery">
+                        <div>
+                            <li><span>Gallery and </span>Event Hall</li>
+                            <p>Josie Drew Restaurant Gallery and Event Hall is a premier dining and event destination in Nigeria, 
+                                known for its exquisite culinary offerings and versatile event spaces. The restaurant specializes in a diverse
+                                menu that features both traditional Nigerian dishes and international cuisine, 
+                                ensuring a delightful experience for all patrons. 
+                                The gallery aspect of the establishment showcases local art,
+                                providing a cultural ambiance that enhances the dining experience.
+                            </p>
+                            
+                            <div class="menu-container">
+                                <div class="box">
+                                    <div class="box-img">
+                                        <img src="event hall.jpg" alt="">
+                                    </div>
+                                    <h2>The event hall is equipped with state-of-the-art facilities, making it an ideal venue for weddings, 
+                                        corporate events, and social gatherings. With a focus on exceptional service, Josie Drew Food Restaurant Gallery and Event Hall 
+                                        has built a reputation for creating memorable experiences through its combination of fine dining,
+                                        artistic environment, and top-notch event management.
+                                    </h2>
+                                </div>
+                                <div class="box">
+                                    <div class="box-img">
+                                        <img src="burger.jpg" alt="">
+                                    </div>
+                                    <h2>The gallery aspect of the establishment showcases local art, providing a cultural ambiance that enhances 
+                                        the dining experience. This fusion of food and art makes Josie Drew not just a place to eat, 
+                                        but a destination for cultural enrichment.
+                                    </h2>
+                                    
+                                </div>
+                                <div class="box">
+                                    <div class="box-img">
+                                        <img src="people event.jpeg" alt="">
+                                    </div>
+                                        
+                                    <h2>Josie Drew Restaurant Gallery and Event Hall has garnered positive reviews for its 
+                                        exceptional service, elegant setting, and delicious food. 
+                                        It stands out as one of the top choices for both dining and hosting events in Nigeria.
+                                    </h2>
+                                    
+                                </div>
+                                
+                                <div class="box">
+                                    <div class="box">
+                                    
+                                        <h1>Food Gallery</h1>
+                                        <h2><li>Jollof Rice: One of the most iconic dishes in Nigeria, Jollof rice is a one-pot dish made with rice, tomatoes, onions, and various spices. It is often served with fried plantains, 
+                                            grilled chicken or fish, and sometimes salad.</li>
+                                        </h2>
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <div class="box">
+                        
+                                        <h2>
+                                            <li>Pounded Yam: A staple in many Nigerian households, pounded yam is made by boiling yams until soft and then pounding them into a smooth dough-like consistency. It is commonly eaten with various soups like Egusi or Okra soup.</li>
+                                            <li>Egusi Soup: This popular soup is made from melon seeds (egusi), leafy vegetables, palm oil, and assorted meats or fish. It is typically served with pounded yam or fufu.</li>
+                                            <li>Okra Soup: Known locally as Okro soup, this dish includes okra pods cooked with meat or fish and seasoned with traditional spices. It is usually accompanied by garri (cassava flour) or pounded yam.</li>
+                                        </h2>
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <div class="box">
+                                        <h2>
+                                            <li>Moi Moi: This steamed bean pudding made from peeled black-eyed peas is mixed with onions, peppers, and other seasonings before being steamed in leaves or foil.</li>
+                                            <li>Suya: A popular street food consisting of skewered grilled meat coated with a spicy peanut mixture known as Yaji spice.</li>
+                                            <li>Pepper Soup: A spicy broth made from a variety of meats including goat meat (popularly called “goat pepper soup”), fish or chicken seasoned with local spices.</li>
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="tab-contents" id="Menu">
+                        <div class="box">
+                            <h2>Send Us a Message with your Order on</h2>
+                            <h3>Whatsapp: (+234) 9043458098 or Call: (+234) 9043458098</h3>
+                            
+                        </div>
+                        <div class="row">
+                            <div class="about-col-1">
+                                <img src="josie drew food menu.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="about-col-1">
+                            <img src="karaoke.jpg" alt="">
+                        </div>
+                    </div>
+                    
+                </div>
+                    
+       
+            </div>
+        </div>
+
+        <!--ervices-->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">Our Services</h1>
+                <h2 class="sub-title">We provide best quality services</h2>
+                <div class="services-list">
+                    <div>
+                        <div class="box-img">
+                            <img src="order.jpg" alt="">
+                        </div>
+        
+                        <h2>Order</h2>
+                        <p>When placing an order at a food restaurant, customers typically have several options to choose from. 
+                            They can either visit the restaurant in person and place their order with a server, 
+                            call the restaurant directly to place a phone order, or use an online platform to place their order electronically.
+
+                        </p>
+                        <p>
+                            Customers may browse through the menu, select the items they wish to order, specify any customizations or special requests, 
+                            and provide their contact information for delivery purposes. Payment is usually made at the time of ordering, 
+                            either online using a credit card or upon delivery if paying in cash.
+                        </p>
+                        
+                    </div>
+                    <div>
+                        <div class="box-img">
+                            <img src="delivery van.jpg" alt="">
+                        </div>
+                        <h2>Delivery</h2>
+                        <p> When it comes to delivering packages from a food restaurant, ensuring timely and 
+                            accurate delivery is crucial for customer satisfaction.
+                        </p>
+                        <p>
+                            For customers who choose delivery, a designated delivery person or service will transport the packaged food items 
+                            from the restaurant to the customer’s specified delivery address. 
+                            The customer should be available to receive the package at the agreed-upon time.
+                        </p>
+                        </p>
+                        
+                    </div>
+                    <div>
+                        <div class="box-img">
+                            <img src="receive.jpg" alt="">
+                        </div>
+                        <h2>Reciving Package</h2>
+                        <p> Once the order is placed and confirmed, the restaurant begins preparing the food items. 
+                            Depending on the restaurant’s policies and the customer’s chosen method of receiving the package.
+                        </p>
+                        <p>
+                            In-Person Pickup: If the customer opts for in-person pickup, they will visit the restaurant at the designated time to collect their order. 
+                            The restaurant staff will hand over the packaged food items along with any condiments or utensils that may be required.
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!----contact---->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Us</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i> drewjoseph399@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone"></i> +234 9043458098</p>
+                        <div class="social-icons">
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                            <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                        </div>
+                        <a href="josie drew food menu.jpg" download class="btn btn2"> Our Menu</a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <a href="https://script.google.com/macros/s/AKfycbxQSf4QYEzMeuWpVnP1bL_tmYF84i07ZIri158QRfOSq96fU2O3UsuvovN6BOqMpuim/exec"><button type="Submit" class="btn btn2" > submit</button></a>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright by @josieDrew made with <i class="fa-solid fa-heart"></i> </p>
+            </div>
+        </div>
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            
+            function opentab(tabname) {
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu() {
+                sidemenu.style.right = "0";
+            }
+            function closemenu() {
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+
+        <script>
+            const scriptURL = "https://script.google.com/macros/s/AKfycbxQSf4QYEzMeuWpVnP1bL_tmYF84i07ZIri158QRfOSq96fU2O3UsuvovN6BOqMpuim/exec"
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+        
+            form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {msg.innerHTML = "message sent successfully" 
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+        </script>
+
+    </body>
+</html>
